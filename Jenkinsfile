@@ -6,7 +6,7 @@ pipeline {
         stage('Pull Code') {
             steps {
                 echo 'Fetching latest code from GitHub'
-                git 'https://github.com/VPatil3155/event-registration-devops1.git'
+                git branch: 'main', url: 'https://github.com/VPatil3155/event-registration-devops1.git'
             }
         }
 
